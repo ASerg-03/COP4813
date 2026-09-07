@@ -26,6 +26,12 @@ nav a:focus {
     text-decoration: underline;
 }
 
+header {
+    background-color: #3b100e;
+    color: white;
+    padding: 20px;
+}
+
 main {
     max-width: 900px;
     margin: 30px auto;
