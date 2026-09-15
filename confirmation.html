@@ -1,96 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Form submission confirmation for COP4813.">
-    <meta name="author" content="Sergio Paredes Seminario">
+        <meta name="description" content="Form submission confirmation for COP4813.">
+        <meta name="author" content="Sergio Paredes Seminario">
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-    <title>Confirm Information | Sergio Paredes Seminario</title>
-</head>
+        <title>Confirm Information | Sergio Paredes Seminario</title>
+    </head>
 
-<body>
-    <header>
-        <h1>Confirm Your Information</h1>
-        <p>Web Programming</p>
+    <body>
+        <header>
+            <h1>Confirm Your Information</h1>
+            <p>Web Programming</p>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="assignments.html">Assignments</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
+        <main>
 
-        <div class="terminal-bar">
-            <span>COP4813 // FORM CONFIRMATION TERMINAL</span>
-            <span>SYS: ONLINE</span>
-        </div>
+            <div class="terminal-bar">
+                <span>COP4813 // FORM CONFIRMATION TERMINAL</span>
+                <span>SYS: ONLINE</span>
+            </div>
 
-        <h2>Please Review Your Information</h2>
+            <h2>Please Review Your Information</h2>
 
-        <div id="confirmationData"></div>
+            <div id="confirmationData"></div>
 
-        <button type="button" id="confirmButton">Confirm Information</button>
-        <button type="button" id="editButton">Edit Information</button>
-    </main>
+            <button type="button" id="confirmButton">Confirm Information</button>
+            <button type="button" id="editButton">Edit Information</button>
+        </main>
 
-    <footer>
-        <p>Made by Sergio Paredes Seminario</p>
-    </footer>
+        <footer>
+            <p>Made by Sergio Paredes Seminario</p>
+        </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
 
-            const storedData = sessionStorage.getItem("formData");
+                const storedData = sessionStorage.getItem("formData");
 
-            if (storedData) {
-                const formData = JSON.parse(storedData);
+                if (storedData) {
+                    const formData = JSON.parse(storedData);
 
-                document.getElementById("confirmationData").innerHTML = `
-                    <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
-                    <p><strong>Address:</strong> ${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}</p>
-                    <p><strong>Phone:</strong> ${formData.phone}</p>
-                    <p><strong>Email:</strong> ${formData.email}</p>
-                    <p><strong>Birth Date:</strong> ${formData.birthdate}</p>
-                    <p><strong>Message:</strong> ${formData.message}</p>
-                `;
-            } else {
-                document.getElementById("confirmationData").innerHTML =
-                    "<p>No form information was found.</p>";
-            }
+                    document.getElementById("confirmationData").innerHTML = `
+                        <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
+                        <p><strong>Address:</strong> ${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}</p>
+                        <p><strong>Phone:</strong> ${formData.phone}</p>
+                        <p><strong>Email:</strong> ${formData.email}</p>
+                        <p><strong>Birth Date:</strong> ${formData.birthdate}</p>
+                        <p><strong>Message:</strong> ${formData.message}</p>
+                    `;
+                } else {
+                    document.getElementById("confirmationData").innerHTML =
+                        "<p>No form information was found.</p>";
+                }
 
-            document.getElementById("editButton").addEventListener("click", function () {
-                window.location.href = "assignment3.html";
+                document.getElementById("editButton").addEventListener("click", function () {
+                    window.location.href = "assignment3.html";
+                });
+
+                document.getElementById("confirmButton").addEventListener("click", function () {
+                    const formData = JSON.parse(sessionStorage.getItem("formData"));
+
+                    const emailBody =
+                        "Name: " + formData.firstName + " " + formData.lastName + "\n" +
+                        "Address: " + formData.address + ", " + formData.city + ", " +
+                        formData.state + " " + formData.zip + "\n" +
+                        "Phone: " + formData.phone + "\n" +
+                        "Email: " + formData.email + "\n" +
+                        "Birth Date: " + formData.birthdate + "\n" +
+                        "Message: " + formData.message;
+
+                    const mailtoLink =
+                        "mailto:ofryn1000@gmail.com" +
+                        "?subject=COP4813 Assignment 3 Form" +
+                        "&body=" + encodeURIComponent(emailBody);
+
+                    window.location.href = mailtoLink;
+                });
+
             });
-
-            document.getElementById("confirmButton").addEventListener("click", function () {
-                const formData = JSON.parse(sessionStorage.getItem("formData"));
-
-                const emailBody =
-                    "Name: " + formData.firstName + " " + formData.lastName + "\n" +
-                    "Address: " + formData.address + ", " + formData.city + ", " +
-                    formData.state + " " + formData.zip + "\n" +
-                    "Phone: " + formData.phone + "\n" +
-                    "Email: " + formData.email + "\n" +
-                    "Birth Date: " + formData.birthdate + "\n" +
-                    "Message: " + formData.message;
-
-                const mailtoLink =
-                    "mailto:ofryn1000@gmail.com" +
-                    "?subject=COP4813 Assignment 3 Form" +
-                    "&body=" + encodeURIComponent(emailBody);
-
-                window.location.href = mailtoLink;
-            });
-
-        });
-    </script>
-</body>
+        </script>
+    </body>
 </html>
