@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Sergio's Assignment 4 for web programming.">
+        <meta name="author" content="Sergio Paredes Seminario">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Assignment 4 - Creating Plots</title>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Sergio Paredes Seminario</h1>
+            <p>COP 4813 Web Programming</p>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="assignments.html" aria-current="page">Assignments</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="terminal-bar">
+                <span>COP4813 // ASSIGNMENT 4</span>
+                <span>SYS: ONLINE</span>
+            </div>
+
+            <h2>Assignment 4: Creating Plots</h2>
+
+            <p>
+                This assignment uses JavaScript and Highcharts to create an
+                interactive calculator and plot.
+            </p>
+
+            <div class="calculator">
+
+                <h3>Compound Interest Calculator</h3>
+
+                <label for="principal">Initial Investment ($):</label>
+                <input type="number" id="principal" value="1000" step="0.01">
+
+                <label for="rate">Annual Interest Rate (%):</label>
+                <input type="number" id="rate" value="5" step="0.01">
+
+                <label for="years">Number of Years:</label>
+                <input type="number" id="years" value="20">
+
+                <button id="calculateButton" onclick="calculate()">Calculate</button>
+                
+                <p id="result"></p>
+
+            </div>
+            
+            <div id="chart"></div>
+
+        </main>
+
+        <footer>
+            <p>Made by Sergio Paredes Seminario</p>
+        </footer>
+
+        <script src="assignment4.js"></script>
+
+    </body>
+</html>
