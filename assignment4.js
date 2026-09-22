@@ -33,14 +33,12 @@ function calculate() {
             }
         },
 
-        tooltip: {
-
-            pointFormat: "Account Value: <b>${point.y:,.2f}</b>"
-        },
-
         series: [{
             name: "Investment Value",
-            data: data
+            data: data,
+            tooltip: {
+                pointFormat: "Investment Value: <b>${point.y:,.2f}</b>"
+            }
         }]
     });
 }
