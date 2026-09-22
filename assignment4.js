@@ -30,10 +30,12 @@ function calculate() {
         yAxis: {
             title: {
                 text: "Account Value ($)"
-            },
-            labels: {
-                format: "${value:,.2f}"
             }
+        },
+
+        tooltip: {
+
+            pointFormat: "Account Value: <b>${point.y:,.2f}</b>"
         },
 
         series: [{
