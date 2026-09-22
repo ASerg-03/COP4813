@@ -30,6 +30,9 @@ function calculate() {
         yAxis: {
             title: {
                 text: "Account Value ($)"
+            },
+            labels: {
+                format: "${value:,.2f}"
             }
         },
 
