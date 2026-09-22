@@ -6,6 +6,7 @@ function calculate() {
     const amount = principal * Math.pow(1 + rate, years);
 
     document.getElementById("result").textContent =
+    
         "Final Amount: $" + amount.toLocaleString("en-US", {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2
