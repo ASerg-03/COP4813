@@ -35,6 +35,30 @@ body {
     color: #202938;
     font-family: "Courier New", Courier, monospace;
     line-height: 1.5;
+
+    background-image:
+        radial-gradient(circle at center, rgba(38, 59, 90, 0.35), transparent 60%),
+        radial-gradient(circle, #263b5a 1px, transparent 1px),
+        linear-gradient(#16233a 1px, transparent 1px),
+        linear-gradient(90deg, #16233a 1px, transparent 1px);
+
+    background-size:
+        100% 100%,
+        40px 40px,
+        40px 40px,
+        40px 40px;
+
+    background-position:
+        center,
+        -20px -20px,
+        0 0,
+        0 0;
+
+    background-attachment:
+        fixed,
+        scroll,
+        scroll,
+        scroll;
 }
 
 header {
@@ -51,7 +75,9 @@ main {
     padding: 30px;
     background-color: #d9dde3;
     border: 3px double #526b8d;
-    box-shadow: 8px 8px 0 #02050c;
+    box-shadow:
+    0 0 60px rgba(80, 160, 220, 0.35),
+    8px 8px 0 #02050c;
 }
 
 footer {
