@@ -204,3 +204,8 @@ button:focus {
     font-family: "Courier New", Courier, monospace;
     font-size: 0.8rem;
 }
+#spirographCanvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Sergio's Assignment 5 for web programming.">
+        <meta name="author" content="Sergio Paredes Seminario">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Assignment 5 - Spirograph</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Sergio Paredes Seminario</h1>
+            <p>COP 4813 Web Programming</p>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="assignments.html" aria-current="page">Assignments</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="terminal-bar">
+                <span>COP4813 // ASSIGNMENT 5</span>
+                <span>SYS: ONLINE</span>
+            </div>
+
+            <h2>Assignment 5: Spirograph</h2>
+
+            <p>
+                This assignment uses HTML5 Canvas and JavaScript to create
+                an interactive Spirograph.
+            </p>
+            
+            
+            <div class="spirograph-controls">
+
+                <label for="radiusR">Outer Radius (R):</label>
+                <input type="number" id="radiusR" value="150" min="1" step="1">
+
+                <label for="radiusR2">Inner Radius (r):</label>
+                <input type="number" id="radiusR2" value="50" min="1" step="1">
+
+                <label for="offsetO">Pen Offset (O):</label>
+                <input type="number" id="offsetO" value="25" min="0">
+
+                <button id="startButton">Start Spirograph</button>
+
+                <button id="stopButton">Stop</button>
+
+            </div>
+
+
+            <canvas id="spirographCanvas" width="800" height="600"></canvas>
+
+        </main>
+
+        <footer>
+            <p>Made by Sergio Paredes Seminario</p>
+        </footer>
+
+        <script src="assignment5.js"></script>
+    </body>
+</html>
