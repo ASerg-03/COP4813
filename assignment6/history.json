@@ -1,0 +1,35 @@
+{
+    "events" : [
+
+        {
+            "year": 1453,
+            "name": "Fall of Constantinople",
+            "location": "Constantinople",
+            "description": "The Ottoman Empire captured Constantinople."
+        },
+        {
+            "year": 1492,
+            "name": "First Voyage of Columbus",
+            "location": "Atlantic Ocean",
+            "description": "Christopher Columbus reached the Americas during his first voyage."
+        },
+        {
+            "year": 1517,
+            "name": "Beginning of the Protestant Reformation",
+            "location": "Wittenberg",
+            "description": "Martin Luther published his Ninety-five Theses."
+        },
+        {
+            "year": 1789,
+            "name": "Beginning of the French Revolution",
+            "location": "France",
+            "description": "The French Revolution began with growing political and social unrest."
+        },
+        {
+            "year": 476,
+            "name": "Fall of the Western Roman Empire",
+            "location": "Rome",
+            "description": "Romulus Augustulus was deposed, traditionally marking the end of the Western Roman Empire."
+        }
+    ]
+}

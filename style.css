@@ -80,6 +80,12 @@ main {
     8px 8px 0 #02050c;
 }
 
+main > section:not(:last-child) {
+    border-bottom: 1px solid #526b8d;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
 footer {
     background-color: #0d1628;
     color: #9eacc0;
@@ -208,4 +214,34 @@ button:focus {
     display: block;
     margin: 20px auto;
     border: 1px solid black;
+}
+
+.event {
+    border-bottom: 1px solid #444;
+    padding: 15px 0;
+}
+
+.event h3 {
+    margin-top: 0;
+}
+
+.event p {
+    margin-bottom: 0;
+}
+
+.page-link {
+    display: inline-block;
+    color: #dce5f0;
+    background-color: #16233a;
+    text-decoration: none;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid #526b8d;
+}
+
+.page-link:hover,
+.page-link:focus {
+    background-color: #526b8d;
+    color: #ffffff;
 }
