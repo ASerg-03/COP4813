@@ -1,5 +1,5 @@
 img {
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -300,14 +300,6 @@ button:focus {
     width: 100px;
     max-width: 100%;
     height: auto;
-    border: 1px solid #9ba8ba;
-    border-radius: 5px;
-    cursor: grab;
-    user-select: none;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 160ms ease,
-                opacity 160ms ease,
-                box-shadow 160ms ease;
 }
 
 .playing-card:hover {
