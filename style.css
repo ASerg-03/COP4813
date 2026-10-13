@@ -245,3 +245,160 @@ button:focus {
     background-color: #526b8d;
     color: #ffffff;
 }
+
+.card-table {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.hand-area,
+.discard-area {
+    padding: 1rem;
+    border: 1px solid #526b8d;
+    border-radius: 6px;
+    background-color: #eceff3;
+}
+
+.hand-area h3,
+.discard-area h3 {
+    margin-top: 0;
+}
+
+.card-row,
+.discard-pile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+    min-height: 150px;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.card-row {
+    background-color: #c4cad3;
+    border: 1px solid #9ba8ba;
+}
+
+.discard-pile {
+    min-height: 170px;
+    border: 2px dashed #526b8d;
+    background-color: #d9dde3;
+    transition: background-color 160ms ease,
+                border-color 160ms ease;
+}
+
+.discard-pile.drag-over {
+    border-color: #263b5a;
+    border-style: solid;
+    background-color: #c2d4e8;
+}
+
+.playing-card {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #9ba8ba;
+    border-radius: 5px;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 160ms ease,
+                opacity 160ms ease,
+                box-shadow 160ms ease;
+}
+
+.playing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.25);
+}
+
+.playing-card:active {
+    cursor: grabbing;
+}
+
+.playing-card.dragging {
+    opacity: 0.4;
+}
+
+@keyframes card-landing {
+    from {
+        opacity: 0.3;
+        transform: translateY(-10px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.card-landing {
+    animation: card-landing 220ms ease-out;
+}
+
+.drop-hint {
+    margin-top: 0;
+    color: #526b8d;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .card-table {
+        gap: 1rem;
+    }
+
+    .playing-card {
+        width: 75px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .playing-card,
+    .discard-pile {
+        transition: none;
+    }
+
+    .card-landing {
+        animation: none;
+    }
+}
+
+.computer-area {
+    padding: 1rem;
+    border: 1px solid #9d4545;
+    border-radius: 6px;
+    background-color: #f2e0e0;
+}
+
+.computer-area h3 {
+    color: #8d2929;
+}
+
+.computer-area .card-row {
+    background-color: #e7cccc;
+    border-color: #c99a9a;
+}
+
+.discard-controls {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0;
+}
+
+.drag-floater {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    margin: 0;
+    opacity: 0.95;
+    transform: rotate(2deg) scale(1.04);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+body.is-dragging {
+    cursor: grabbing;
+    user-select: none;
+}
