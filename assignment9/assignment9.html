@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Sergio's Animation assignment">
+        <meta name="author" content="Sergio Paredes Seminario">
+
+        <title>Assignment 9 - Animation</title>
+
+        <link rel="stylesheet" href="../style.css">
+
+            <style>
+        .physics-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .physics-controls button {
+            padding: 10px 16px;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+            color: #d8fff0;
+            background: #172923;
+            border: 1px solid #54d6a0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .physics-controls button:hover {
+            background: #254637;
+        }
+
+        .physics-controls button:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 3px;
+        }
+
+        #physicsCanvas {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            background: #0b1118;
+            border: 2px solid #54d6a0;
+            touch-action: none;
+        }
+
+        #statusMessage {
+            font-family: "Courier New", monospace;
+            color: #54d6a0;
+            margin-top: 12px;
+        }
+
+        .sandbox-help {
+            max-width: 800px;
+            line-height: 1.6;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>My Assignments</h1>
+            <p>Web Programming</p>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About Me</a>
+                <a href="../assignments.html">Assignments</a>
+            </nav>
+        </header>
+
+       <main>
+
+            <div class="terminal-bar">
+                <span>COP4813 // CARDS</span>
+                <span>SYS: ONLINE</span>
+            </div>
+
+             <h2>Assignment 9: Animation</h2>
+
+            <p>
+                Experiment with gravity, motion, and throwing objects
+                inside this interactive physics sandbox.
+            </p>
+
+            <section class="physics-controls" aria-label="Physics controls">
+                <button id="gravityButton"
+                        type="button"
+                        aria-pressed="true">
+                    Gravity: ON
+                </button>
+
+                <button id="spawnButton" type="button">
+                    Spawn Ball
+                </button>
+
+                <button id="resetButton" type="button">
+                    Reset
+                </button>
+            </section>
+
+            <canvas id="physicsCanvas"
+                    width="800"
+                    height="500"
+                    aria-label="Physics sandbox. Click a ball to stop it,
+                    or drag and release it to throw it.">
+                Your browser does not support HTML canvas.
+            </canvas>
+
+            <p id="statusMessage" role="status" aria-live="polite">
+                Balls: 1 | Gravity: ON
+            </p>
+
+            <p class="sandbox-help">
+                <strong>Controls:</strong>
+                Click a ball to stop it. Click and drag a ball to pick it up,
+                then release to throw it. Toggle gravity to change the motion.
+                Spawn creates additional balls, and Reset restores the sandbox.
+            </p>
+        </main>
+
+
+        <footer>
+            <p>Made by Sergio Paredes Seminario</p>
+        </footer>
+
+        <script src="assignment9.js"></script>
+    </body>
+</html>
