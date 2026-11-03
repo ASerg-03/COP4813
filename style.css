@@ -394,3 +394,76 @@ body.is-dragging {
     cursor: grabbing;
     user-select: none;
 }
+
+/* =========================================
+   A10: Mobile Homepage
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 15px 0 0;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+    }
+
+    nav a {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin-right: 0;
+        padding: 10px 12px;
+    }
+
+    main {
+        box-sizing: border-box;
+        width: calc(100% - 20px);
+        max-width: 900px;
+        margin: 15px auto;
+        padding: 15px;
+        box-shadow: 3px 3px 0 #02050c;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        overflow-wrap: break-word;
+    }
+
+    main p {
+        overflow-wrap: break-word;
+    }
+
+    .terminal-bar {
+        flex-wrap: wrap;
+        gap: 5px 12px;
+        font-size: 0.75rem;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 10px 12px;
+    }
+}

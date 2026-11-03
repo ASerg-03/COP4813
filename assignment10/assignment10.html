@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Assignment 10 Lighthouse accessibility and mobile audit results.">
+        <meta name="author" content="Sergio Paredes Seminario">
+
+        <title>Assignment 10 - Website Audit</title>
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>My Assignments</h1>
+            <p>Web Programming</p>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../assignments.html">Assignments</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="terminal-bar">
+                <span>COP4813 // WEBSITE AUDIT</span>
+                <span>SYS: ONLINE</span>
+            </div>
+
+            <h2>Assignment 10: Website Audit</h2>
+
+            <p>
+                This page contains the results of a Lighthouse
+                audit performed on my website's homepage using
+                mobile navigation mode.
+            </p>
+
+            <section>
+                <h3>Performance Metrics</h3>
+
+                <ul>
+                    <li>First Contentful Paint: 0.8 seconds</li>
+                    <li>Total Blocking Time: 50 milliseconds</li>
+                    <li>Speed Index: 0.8 seconds</li>
+                    <li>Largest Contentful Paint: 11.7 seconds</li>
+                    <li>Cumulative Layout Shift: 0</li>
+                </ul>
+
+                <h3>Performance Analysis</h3>
+
+                <p>
+                    The website received a performance score of 75.
+                    Most of the performance metrics were good,
+                    including First Contentful Paint, Total Blocking
+                    Time, Speed Index, and Cumulative Layout Shift.
+                    However, Largest Contentful Paint was significantly
+                    slower at 11.7 seconds.
+                </p>
+
+                <p>
+                    Lighthouse identified opportunities to improve
+                    image delivery, estimating approximately 2,130 KiB
+                    in potential savings. It also identified an issue
+                    related to Largest Contentful Paint request discovery.
+                    Optimizing image sizes and formats could help
+                    improve the loading experience.
+                </p>
+            </section>
+
+            <section>
+                <h3>Additional Lighthouse Insights and Diagnostics</h3>
+
+                <h3>Insights</h3>
+
+                <p>
+                    Lighthouse identified several factors affecting the
+                    website's performance. The most significant finding was
+                    the Improve Image Delivery recommendation, which
+                    estimated approximately 2,130 KiB in potential savings.
+                    This suggests that optimizing image file sizes and
+                    formats could improve loading performance.
+                </p>
+
+                <p>
+                    Lighthouse also identified issues with LCP Request
+                    Discovery and the Network Dependency Tree. These findings
+                    indicate that the browser may take too long to discover
+                    or load the resource responsible for the largest visible
+                    element. Document Request Latency and Render-Blocking
+                    Requests were also identified as areas for improvement.
+                </p>
+
+                <p>
+                    The LCP Breakdown and Third-Party sections provided
+                    additional information about the loading process and
+                    possible external resource impacts.
+                </p>
+
+                <h3>Diagnostics</h3>
+
+                <p>
+                    The diagnostic results identified image elements without
+                    explicit width and height attributes. Providing these
+                    dimensions can help the browser reserve the correct
+                    amount of space for images before they finish loading.
+                    This can reduce unexpected layout changes.
+                </p>
+
+                <p>
+                    Lighthouse also identified opportunities to minify CSS,
+                    reduce unused JavaScript, and avoid long main-thread
+                    tasks. The report estimated approximately 2 KiB in
+                    potential CSS savings and 180 KiB in potential unused
+                    JavaScript savings. Three long tasks were also detected.
+                </p>
+
+                <p>
+                    These diagnostics provide additional information about
+                    possible improvements, although their estimated savings
+                    do not directly affect the overall Performance score.
+                </p>
+            </section>
+
+            <section>
+                <h3>Full Lighthouse Report</h3>
+
+                <p>
+                    The complete Lighthouse report is embedded below
+                    for additional details about the audit results.
+                </p>
+
+                <iframe
+                    src="lighthouse-report.html"
+                    title="Full Lighthouse audit report"
+                    width="100%"
+                    height="900"
+                    style="border: 1px solid #333;">
+                </iframe>
+
+                <p>
+                    <a href="lighthouse-report.html" target="_blank">
+                        Open Full Lighthouse Report
+                    </a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Accessibility, Best Practices, and SEO</h3>
+
+                <p>
+                    The website received a score of 100 in Accessibility,
+                    Best Practices, and SEO. These results indicate that
+                    the website performed well in the audited areas
+                    relating to accessibility, web development practices,
+                    and search engine optimization.
+                </p>
+            </section>
+
+            <section>
+                <h3>Conclusion</h3>
+
+                <p>
+                    Overall, the Lighthouse audit showed that my website
+                    performs well in accessibility, best practices, and
+                    SEO. The main area that needs improvement is
+                    performance, particularly image loading. I could
+                    improve this by optimizing images and reducing
+                    unnecessary image file sizes.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Made by Sergio Paredes Seminario</p>
+        </footer>
+
+    </body>
+</html>
