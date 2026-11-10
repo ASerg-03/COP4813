@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 1,
+  "program": {
+    "name": "Bachelor of Science in Information Technology",
+    "school": "Daytona State College",
+    "programCode": "633400",
+    "catalogYear": "2026-2027",
+    "totalCredits": 128,
+    "creditRequirements": {
+      "generalEducation": 36,
+      "lowerLevelTechnicalElectives": 44,
+      "upperLevelProgramSpecific": 48,
+      "requiredProgramCourses": 45,
+      "programElective": 3
+    },
+    "minimumGrade": "C",
+    "notes": [
+      "Students must earn a grade of C or better in all program-specific and prerequisite coursework.",
+      "The program requires foreign-language competency: two years of the same language in high school or two semesters of the same college-level language.",
+      "Students must satisfy College-Level Communication and Computational Skills and Civic Literacy Competency requirements.",
+      "Students should seek academic advisement before enrolling. Course sequence may vary.",
+      "Prerequisite courses count toward the 44 lower-level technical elective hours."
+    ]
+  },
+  "admissionRequirements": {
+    "education": {
+      "options": [
+        "Conferred AA, AS, or AAS degree from a regionally accredited institution",
+        "At least 60 transferable college-level credits from a regionally accredited institution, including at least 15 general-education credits"
+      ]
+    },
+    "requiredCourses": ["ENC1101", "MAC1105"],
+    "requiredCourseNote": "ENC1101 and MAC1105, or higher-level equivalents, must be completed with a grade of C or better.",
+    "minimumGPA": 2.5,
+    "conditionalGPARange": {
+      "minimum": 2.0,
+      "maximumExclusive": 2.5,
+      "note": "Applicants in this range may be considered for conditional admission with department-chair approval."
+    }
+  },
+  "lowerDivisionRequirements": [
+    {
+      "id": "trigonometry",
+      "label": "Mathematics: Trigonometry",
+      "rule": {"all": ["MAC1114"]},
+      "credits": 3
+    },
+    {
+      "id": "statistics",
+      "label": "Statistics (select one)",
+      "rule": {"any": ["STA2023", "EGN3443"]},
+      "credits": 3,
+      "note": "EGN3443 is the preferred option in the program planner."
+    },
+    {
+      "id": "calculus",
+      "label": "Calculus (select one)",
+      "rule": {"any": ["EGN2045", "MAC2311C"]},
+      "credits": 4,
+      "note": "The catalog identifies EGN2045 as the technical pathway and MAC2311C as the graduate pathway."
+    },
+    {
+      "id": "programming-foundation",
+      "label": "Foundational programming",
+      "rule": {"all": ["COP1000"]},
+      "credits": 3
+    },
+    {
+      "id": "programming-course",
+      "label": "Programming course (select one)",
+      "rule": {"any": ["COP2220", "COP2360", "COP2800"]},
+      "credits": 3,
+      "note": "Only one of C, C#, or Java is required for this group."
+    },
+    {
+      "id": "digital-technology",
+      "label": "Digital technology (select one)",
+      "rule": {"any": ["CET3116", "CET1112C"]},
+      "credits": 4,
+      "note": "CET3116 is the recommended option."
+    },
+    {
+      "id": "discrete-mathematics",
+      "label": "Discrete mathematics (select one)",
+      "rule": {"any": ["COT3100", "MAD2104"]},
+      "credits": 3,
+      "note": "COT3100 is the recommended option."
+    },
+    {
+      "id": "electrical-fundamentals",
+      "label": "Electrical fundamentals (select one complete option)",
+      "rule": {
+        "any": [
+          "EET3086",
+          {"all": ["EET3085", "EET1021C"]},
+          {"all": ["EET1011C", "EET1021C"]}
+        ]
+      },
+      "credits": null,
+      "note": "Choose EET3086, or complete both courses in either of the other two listed combinations."
+    }
+  ],
+  "programCoreRequirements": {
+    "label": "Required BSIT program courses",
+    "credits": 45,
+    "rule": {
+      "all": [
+        "CIS4250", "GEB3213", "COP3530", "CTS3348", "CEN3722", "COP4708",
+        "COP4610", "CIS4360", "CNT3104", "CNT4007", "CNT4703", "CDA4101",
+        "CEN4801", "CEN4010", "COP4813", "CIS4510"
+      ]
+    }
+  },
+  "programElectiveRequirement": {
+    "label": "BSIT program elective (select one)",
+    "credits": 3,
+    "exclusive": false,
+    "creditCap": 3,
+    "rule": {"choose": 1, "from": [
+      "CAI4002", "CAI4805", "CAP3744", "COP4709", "COP4834",
+      "CET4860", "CET4861", "CET4862", "CET4884"
+    ]},
+    "note": "The 2026-2027 catalog requires one 3-credit program elective from this list. The elective is separate from the certificate pathways below. Electives are not mutually exclusive: students may complete several, but only creditCap credits count toward this requirement."
+  },
+  "exclusiveChoiceGroups": [
+    {
+      "id": "statistics",
+      "requirementId": "statistics",
+      "label": "Statistics",
+      "exclusive": true,
+      "options": [["STA2023"], ["EGN3443"]],
+      "note": "Choose one statistics course. EGN3443 is the preferred option in the catalog."
+    },
+    {
+      "id": "calculus",
+      "requirementId": "calculus",
+      "label": "Calculus",
+      "exclusive": true,
+      "options": [["EGN2045"], ["MAC2311C"]],
+      "note": "Choose one calculus course. EGN2045 is the technical pathway and MAC2311C is the graduate pathway."
+    },
+    {
+      "id": "programming-course",
+      "requirementId": "programming-course",
+      "label": "Programming course",
+      "exclusive": true,
+      "options": [["COP2220"], ["COP2360"], ["COP2800"]],
+      "note": "Only one of C, C#, or Java is required for this group."
+    },
+    {
+      "id": "digital-technology",
+      "requirementId": "digital-technology",
+      "label": "Digital technology",
+      "exclusive": true,
+      "options": [["CET3116"], ["CET1112C"]],
+      "note": "Choose one digital technology course. CET3116 is the recommended option."
+    },
+    {
+      "id": "discrete-mathematics",
+      "requirementId": "discrete-mathematics",
+      "label": "Discrete mathematics",
+      "exclusive": true,
+      "options": [["COT3100"], ["MAD2104"]],
+      "note": "Choose one discrete mathematics course. COT3100 is the recommended option."
+    },
+    {
+      "id": "electrical-fundamentals",
+      "requirementId": "electrical-fundamentals",
+      "label": "Electrical fundamentals",
+      "exclusive": true,
+      "options": [
+        ["EET3086"],
+        ["EET3085", "EET1021C"],
+        ["EET1011C", "EET1021C"]
+      ],
+      "note": "Choose one pathway: EET3086 alone, or EET3085 together with EET1021C, or EET1011C together with EET1021C. EET1021C belongs to two pathways, so completing it alone does not rule out either of them."
+    }
+  ],
+  "alternativePrerequisiteGroups": [
+    {
+      "id": "cis4360-network-prerequisite",
+      "appliesTo": "CIS4360",
+      "exclusive": false,
+      "alternatives": ["CET1600", "CNT3104"],
+      "note": "Either course satisfies this prerequisite. These are ordinary OR prerequisites, not an exclusive choice: a student may complete both (CNT3104 is also a required program course)."
+    },
+    {
+      "id": "cet4884-writing-prerequisite",
+      "appliesTo": "CET4884",
+      "exclusive": false,
+      "alternatives": ["GEB3213", "ENC2210"],
+      "note": "Either course satisfies this prerequisite. These are ordinary OR prerequisites, not an exclusive choice: a student may complete both (GEB3213 is also a required program course)."
+    },
+    {
+      "id": "cts3348-math-prerequisite",
+      "appliesTo": "CTS3348",
+      "exclusive": false,
+      "alternatives": ["MAC1105", "MAC1114", "MAC1140", "MAC2311C", "EGN2045"],
+      "note": "Approximates 'MAC1105 or higher'. Not an exclusive choice: other degree requirements need several of these math courses, so completing one never disables the others."
+    }
+  ],
+  "certificates": [
+    {
+      "id": "ai-data-analytics",
+      "name": "AI and Data Analytics",
+      "courses": ["EGN3443", "COP4708", "CIS4250", "COP4709", "COP3530", "CAP3744", "CAI4002", "CAI4805", "COT3100"],
+      "note": "Optional advanced technical certificate pathway. The certificate description says all listed courses must be completed to earn the certificate."
+    },
+    {
+      "id": "web-systems-software-development",
+      "name": "Web Systems Software Development",
+      "courses": ["COP4813", "COP4708", "COP4834", "COP4709", "COP3530", "CEN3722", "CIS4510"],
+      "note": "Optional advanced technical certificate pathway. The certificate description says all listed courses must be completed to earn the certificate."
+    },
+    {
+      "id": "cybersecurity-cyberforensics",
+      "name": "Cybersecurity and Cyberforensics",
+      "courses": ["CET4860", "CET4861", "CET4862", "CTS3348", "CIS4360", "CET4884"],
+      "note": "Optional advanced technical certificate pathway. The certificate description says all listed courses must be completed to earn the certificate."
+    }
+  ],
+  "courses": [
+    {
+      "code": "MAC1105",
+      "name": "College Algebra",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["admission-requirement", "prerequisite-support"],
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "MAC1114",
+      "name": "College Trigonometry",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "MAC1140",
+      "name": "Pre-Calculus",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["prerequisite-support"],
+      "offered": ["Fall", "Spring", "Summer"],
+      "notes": ["Listed in the planner's prerequisite section but not modeled as a required course in lowerDivisionRequirements."]
+    },
+    {
+      "code": "MAC2311C",
+      "name": "Calculus I",
+      "credits": 4,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "EGN2045",
+      "name": "Engineering and Technology Calculus I",
+      "credits": 4,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring"]
+    },
+    {
+      "code": "STA2023",
+      "name": "Elementary Statistics",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement", "prerequisite-support"],
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "EGN3443",
+      "name": "Probability and Statistics for Engineers",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement", "certificate-course"],
+      "preferred": true,
+      "offered": ["Fall"]
+    },
+    {
+      "code": "COT3100",
+      "name": "Discrete Computational Analysis",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement", "certificate-course"],
+      "preferred": true,
+      "offered": ["Fall", "Spring"]
+    },
+    {
+      "code": "MAD2104",
+      "name": "Discrete Mathematics",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall"]
+    },
+    {
+      "code": "COP1000",
+      "name": "Principles of Computer Programming",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "COP2220",
+      "name": "Computer Programming C",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring"]
+    },
+    {
+      "code": "COP2360",
+      "name": "C# Programming",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "COP2800",
+      "name": "Computer Programming Java",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring"]
+    },
+    {
+      "code": "CET3116",
+      "name": "Digital Technology",
+      "credits": 4,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement", "prerequisite-support"],
+      "preferred": true,
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "CET1112C",
+      "name": "Digital Fundamentals and Lab",
+      "credits": 4,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement", "prerequisite-support"],
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "EET3086",
+      "name": "Principles of Electrical Circuits",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement", "prerequisite-support"],
+      "preferred": true,
+      "offered": ["Fall", "Spring", "Summer"]
+    },
+    {
+      "code": "EET3085",
+      "name": "Electricity and Electronics",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring", "Summer"],
+      "notes": ["The BSIT planner labels this the lecture-only option and pairs it with EET1021C."]
+    },
+    {
+      "code": "EET1011C",
+      "name": "Introduction to Electrical Circuits and Lab",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring"]
+    },
+    {
+      "code": "EET1021C",
+      "name": "Advanced Electrical Circuits and Lab",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["lower-division-requirement"],
+      "offered": ["Fall", "Spring"]
+    },
+    {
+      "code": "ENC1101",
+      "name": "Introduction to Composition",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["admission-requirement", "prerequisite-support"]
+    },
+    {
+      "code": "CET1600",
+      "name": "Network Plus",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["prerequisite-support"],
+      "notes": ["Required as one possible alternative prerequisite for CIS4360. Semester availability was not legible in the supplied planner description."]
+    },
+    {
+      "code": "ENC2210",
+      "name": "Report Writing",
+      "credits": 3,
+      "level": "lower-division",
+      "roles": ["prerequisite-support"],
+      "notes": ["One possible prerequisite alternative for CET4884. Semester availability should be confirmed against the current schedule."]
+    },
+    {
+      "code": "GEB3213",
+      "name": "Business Writing",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall", "Spring", "Summer"],
+      "prerequisites": {"all": ["ENC1101"]}
+    },
+    {
+      "code": "CIS4250",
+      "name": "Ethical Issues in IT",
+      "credits": 1,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall", "Summer"],
+      "prerequisites": {"all": ["GEB3213"]}
+    },
+    {
+      "code": "COP3530",
+      "name": "Data Structures",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall", "Spring"],
+      "prerequisites": {
+        "all": [
+          {"any": ["COP2800", "COP2220", "COP2360"]},
+          {"any": ["COT3100", "MAD2104"]}
+        ]
+      }
+    },
+    {
+      "code": "CTS3348",
+      "name": "Linux Administration",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall", "Summer"],
+      "prerequisites": {
+        "any": ["MAC1105", "MAC1114", "MAC1140", "MAC2311C", "EGN2045"]
+      },
+      "prerequisiteNote": "The planner says MAC1105 or higher. This list approximates the named math options in this dataset; verify transfer or higher-level equivalents with an advisor."
+    },
+    {
+      "code": "CEN3722",
+      "name": "Human Computer Interfaces",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall", "Spring"],
+      "prerequisites": {"any": ["COP2800", "COP2220", "COP2360"]}
+    },
+    {
+      "code": "COP4708",
+      "name": "Applied Database I",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall", "Spring"],
+      "prerequisites": {"any": ["COP2800", "COP2220", "COP2360"]}
+    },
+    {
+      "code": "COP4610",
+      "name": "Operating Systems",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core"],
+      "offered": ["Fall", "Spring"],
+      "prerequisites": {"all": ["CTS3348"]}
+    },
+    {
+      "code": "CIS4360",
+      "name": "Applied Cybersecurity",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall", "Spring", "Summer"],
+      "prerequisites": {
+        "all": [
+          "CTS3348",
+          {"any": ["CET1600", "CNT3104"]}
+        ]
+      }
+    },
+    {
+      "code": "CNT3104",
+      "name": "Introduction to Telecommunications",
+      "credits": 2,
+      "level": "upper-division",
+      "roles": ["program-core"],
+      "offered": ["Fall", "Summer"],
+      "prerequisites": {"any": ["EET1021C", "EET3086"]}
+    },
+    {
+      "code": "CNT4007",
+      "name": "Data and Computer Communications",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core"],
+      "offered": ["Fall", "Spring"],
+      "prerequisites": {
+        "all": [
+          "CNT3104",
+          {"any": ["STA2023", "EGN3443"]}
+        ]
+      }
+    },
+    {
+      "code": "CNT4703",
+      "name": "Voice and Data Network Design",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core"],
+      "offered": ["Fall", "Summer"],
+      "prerequisites": {"all": ["CNT4007"]}
+    },
+    {
+      "code": "CDA4101",
+      "name": "Computer Organization and Design",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core"],
+      "offered": ["Fall", "Spring"],
+      "prerequisites": {"any": ["CET1112C", "CET3116"]}
+    },
+    {
+      "code": "CEN4801",
+      "name": "Systems Integration",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core"],
+      "offered": ["Fall"],
+      "prerequisites": {"all": ["COP4708", "COP3530"]}
+    },
+    {
+      "code": "CEN4010",
+      "name": "Software Engineering",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core"],
+      "offered": ["Spring"],
+      "prerequisites": {"all": ["COP3530"]}
+    },
+    {
+      "code": "COP4813",
+      "name": "Web Systems I",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Fall"],
+      "prerequisites": {"all": ["COP3530"]}
+    },
+    {
+      "code": "CIS4510",
+      "name": "IT Project Management",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-core", "certificate-course"],
+      "offered": ["Spring"],
+      "prerequisites": {"all": ["CEN4801"]}
+    },
+    {
+      "code": "CAI4002",
+      "name": "Introduction to Artificial Intelligence",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Spring"]
+    },
+    {
+      "code": "CAI4805",
+      "name": "Artificial Intelligence Implementation and Maintenance",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Spring"]
+    },
+    {
+      "code": "CAP3744",
+      "name": "Data Analytics and Visualization",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Fall"]
+    },
+    {
+      "code": "COP4709",
+      "name": "Applied Database II",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Spring"]
+    },
+    {
+      "code": "COP4834",
+      "name": "Web Systems II",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Spring"]
+    },
+    {
+      "code": "CET4860",
+      "name": "Introduction to Digital Forensics",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Spring", "Summer"],
+      "prerequisites": {"all": ["CIS4360"]}
+    },
+    {
+      "code": "CET4861",
+      "name": "Advanced Digital Forensics",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Fall"],
+      "prerequisites": {"all": ["CET4860"]}
+    },
+    {
+      "code": "CET4862",
+      "name": "Network Forensics and Incident Response",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Spring"],
+      "prerequisites": {"all": ["CIS4360"]}
+    },
+    {
+      "code": "CET4884",
+      "name": "Security Methods and Practice",
+      "credits": 3,
+      "level": "upper-division",
+      "roles": ["program-elective", "certificate-course"],
+      "offered": ["Fall"],
+      "prerequisites": {"any": ["GEB3213", "ENC2210"]}
+    }
+  ],
+  "dataNotes": [
+    "Course offerings are based on the 2026-2027 BSIT planner supplied for this assignment. Actual sections can vary by term; students should confirm the live schedule before enrolling.",
+    "COP3530 is listed as offered Fall and Spring: the planner shows Summer as not offered, and the certificate tables show Fall and Spring.",
+    "When a course has no offered property, availability was not confirmed in the supplied planner; it does not mean the course is never offered.",
+    "Course prerequisites for the upper-division courses are transcribed from the supplied 2026-2027 planner description. Confirm details with the live catalog and department before using this as official advising.",
+    "The 'MAC1105 or higher' requirement for CTS3348 is represented using the specific math courses in this dataset as a practical approximation. Equivalent or higher coursework should be reviewed by an academic advisor.",
+    "Course names follow the college catalog; offered terms and prerequisites are transcribed from the supplied planner.",
+    "exclusiveChoiceGroups mark 'select one' requirements. Each option is an array of course codes and every course in an option is required; a student may complete courses from only one option per group. alternativePrerequisiteGroups (exclusive: false) are ordinary OR prerequisites and never block other courses. Program electives are not exclusive; creditCap limits how many elective credits count.",
+    "The AI and Data Analytics certificate lists EGN3443 and COT3100. Because statistics and discrete mathematics are exclusive-choice groups, a student who chose STA2023 or MAD2104 cannot also mark those courses completed in this advisor."
+  ],
+  "sources": [
+    {
+      "label": "Daytona State College 2026-2027 BSIT Catalog",
+      "url": "https://daytonastate.smartcatalogiq.com/en/2026-2027/college-catalog/program-guides/bs-degree/information-technology-bsit-b-s-degree"
+    },
+    {
+      "label": "BSIT 2026-2027 planner supplied for COP4813 Assignment 11",
+      "url": null
+    }
+  ]
+}

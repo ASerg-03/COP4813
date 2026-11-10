@@ -1,32 +1,11 @@
+
+/* =========================================
+   GENERAL WEBSITE STYLES
+   ========================================= */
+
 img {
     max-width: 100%;
     height: auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    display: inline-block;
-    color: #dce5f0;
-    background-color: #16233a;
-    text-decoration: none;
-    padding: 6px 12px;
-    margin-right: 5px;
-    border: 1px solid #526b8d;
-}
-
-nav a:hover,
-nav a:focus {
-    background-color: #526b8d;
-    color: #ffffff;
 }
 
 body {
@@ -61,6 +40,11 @@ body {
         scroll;
 }
 
+
+/* =========================================
+   HEADER AND NAVIGATION
+   ========================================= */
+
 header {
     background-color: #0d1628;
     color: #dce5f0;
@@ -69,6 +53,37 @@ header {
     border-bottom: 3px double #526b8d;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: #dce5f0;
+    background-color: #16233a;
+    text-decoration: none;
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: 1px solid #526b8d;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #526b8d;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -76,8 +91,8 @@ main {
     background-color: #d9dde3;
     border: 3px double #526b8d;
     box-shadow:
-    0 0 60px rgba(80, 160, 220, 0.35),
-    8px 8px 0 #02050c;
+        0 0 60px rgba(80, 160, 220, 0.35),
+        8px 8px 0 #02050c;
 }
 
 main > section:not(:last-child) {
@@ -86,15 +101,6 @@ main > section:not(:last-child) {
     margin-bottom: 15px;
 }
 
-footer {
-    background-color: #0d1628;
-    color: #9eacc0;
-    text-align: left;
-    padding: 10px 20px;
-    margin-top: 30px;
-    border-top: 3px double #526b8d;
-    font-size: 0.85rem;
-}
 h1,
 h2,
 h3 {
@@ -117,6 +123,26 @@ h3 {
     color: #263f62;
     font-size: 1.1rem;
 }
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #0d1628;
+    color: #9eacc0;
+    text-align: left;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-top: 3px double #526b8d;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   FORMS AND INPUTS
+   ========================================= */
 
 form {
     max-width: 700px;
@@ -150,19 +176,6 @@ textarea {
     box-sizing: border-box;
     width: 100%;
     max-width: 500px;
-    padding: 9px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #fafbfc;
-    color: #202938;
-    border: 1px solid #9ba8ba;
-}
-
-input,
-select,
-textarea {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 500px;
     padding: 7px;
     background-color: #f8f9fa;
     color: #111923;
@@ -173,6 +186,11 @@ textarea {
 textarea {
     resize: vertical;
 }
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
 
 button {
     background-color: #263b5a;
@@ -188,6 +206,11 @@ button:hover,
 button:focus {
     background-color: #344d70;
 }
+
+
+/* =========================================
+   TERMINAL INTERFACE
+   ========================================= */
 
 .terminal-bar {
     display: flex;
@@ -210,11 +233,11 @@ button:focus {
     font-family: "Courier New", Courier, monospace;
     font-size: 0.8rem;
 }
-#spirographCanvas {
-    display: block;
-    margin: 20px auto;
-    border: 1px solid black;
-}
+
+
+/* =========================================
+   ASSIGNMENT 6: HISTORY EVENTS
+   ========================================= */
 
 .event {
     border-bottom: 1px solid #444;
@@ -228,6 +251,11 @@ button:focus {
 .event p {
     margin-bottom: 0;
 }
+
+
+/* =========================================
+   PAGE LINKS
+   ========================================= */
 
 .page-link {
     display: inline-block;
@@ -245,6 +273,11 @@ button:focus {
     background-color: #526b8d;
     color: #ffffff;
 }
+
+
+/* =========================================
+   ASSIGNMENT 7: CARD GAME
+   ========================================= */
 
 .card-table {
     display: grid;
@@ -285,8 +318,9 @@ button:focus {
     min-height: 170px;
     border: 2px dashed #526b8d;
     background-color: #d9dde3;
-    transition: background-color 160ms ease,
-                border-color 160ms ease;
+    transition:
+        background-color 160ms ease,
+        border-color 160ms ease;
 }
 
 .discard-pile.drag-over {
@@ -337,26 +371,7 @@ button:focus {
     font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
-    .card-table {
-        gap: 1rem;
-    }
-
-    .playing-card {
-        width: 75px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .playing-card,
-    .discard-pile {
-        transition: none;
-    }
-
-    .card-landing {
-        animation: none;
-    }
-}
+/* Computer opponent */
 
 .computer-area {
     padding: 1rem;
@@ -373,6 +388,8 @@ button:focus {
     background-color: #e7cccc;
     border-color: #c99a9a;
 }
+
+/* Card drag effects */
 
 .discard-controls {
     display: flex;
@@ -395,8 +412,9 @@ body.is-dragging {
     user-select: none;
 }
 
+
 /* =========================================
-   A10: Mobile Homepage
+   ASSIGNMENT 10: MOBILE HOMEPAGE
    ========================================= */
 
 @media screen and (max-width: 600px) {
@@ -466,4 +484,39 @@ body.is-dragging {
     footer {
         padding: 10px 12px;
     }
+}
+
+
+/* =========================================
+   RESPONSIVE CARD GAME
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .card-table {
+        gap: 1rem;
+    }
+
+    .playing-card {
+        width: 75px;
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .playing-card,
+    .discard-pile {
+        transition: none;
+    }
+
+    .card-landing {
+        animation: none;
+    }
+
 }

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 11 - BSIT Course Advisor</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="assignment11.css">
+
+    <script src="assignment11.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Leo</h1>
+        <p>COP4813 // Web Programming</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../assignments.html">Assignments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="terminal-bar">
+            <span>COP4813 // BSIT COURSE ADVISOR</span>
+            <span id="systemStatus">SYS: INITIALIZING</span>
+        </div>
+
+        <h2>Assignment 11: BSIT Course Advisor</h2>
+
+        <p>
+            This tool helps students plan their Bachelor of Science
+            in Information Technology degree at Daytona State College.
+            Track completed courses, review enrollment eligibility,
+            and organize future courses into semesters.
+        </p>
+
+        <!-- PROGRAM OVERVIEW -->
+
+        <section>
+
+            <h3>Program Overview</h3>
+
+            <div id="programOverview">
+                <p>Loading program information...</p>
+            </div>
+
+            <div id="programSummary">
+
+                <div>
+                    <h4>Total Credits</h4>
+                    <p id="totalCredits">--</p>
+                </div>
+
+                <div>
+                    <h4>Completed Courses</h4>
+                    <p id="completedCount">0</p>
+                </div>
+
+                <div>
+                    <h4>Eligible Courses</h4>
+                    <p id="eligibleCount">0</p>
+                </div>
+
+                <div>
+                    <h4>Planned Courses</h4>
+                    <p id="plannedCount">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DEGREE PROGRESS -->
+
+        <section>
+
+            <h3>Degree Progress</h3>
+
+            <p>
+                Enter any general education and lower-level technical
+                elective credits you have already completed. Include
+                applicable prerequisite courses in your lower-level
+                credit total. Avoid counting the same credits twice.
+            </p>
+            <div>
+                <label for="generalEducationCredits">
+                    General Education Credits Completed
+                </label>
+
+                <input
+                    type="number"
+                    id="generalEducationCredits"
+                    min="0"
+                    max="36"
+                    value="0"
+                >
+            </div>
+
+            <div>
+                <label for="lowerLevelCredits">
+                    Lower-Level Technical Elective Credits Completed
+                </label>
+
+                <input
+                    type="number"
+                    id="lowerLevelCredits"
+                    min="0"
+                    max="44"
+                    value="0"
+                >
+            </div>
+
+            <div id="requirementProgress">
+
+                <p>
+                    Degree requirement progress will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- COMPLETED COURSES -->
+
+        <section>
+
+            <h3>Completed Courses</h3>
+
+            <p>
+                Select courses you have already completed.
+                The advisor will use this information to determine
+                which additional courses you can take.
+            </p>
+
+            <div>
+                <label for="completedCourseSearch">
+                    Search for a Course
+                </label>
+
+                <input
+                    type="search"
+                    id="completedCourseSearch"
+                    placeholder="Search by course code or name..."
+                >
+
+                <label for="completedCourseSelect">
+                    Select a Matching Course
+                </label>
+
+                <select id="completedCourseSelect">
+
+                    <option value="">
+                        Loading courses...
+                    </option>
+
+                </select>
+
+                <button
+                    type="button"
+                    id="addCompletedCourseButton"
+                >
+                    Mark as Completed
+                </button>
+
+            </div>
+
+            <div id="completedCoursesList">
+
+                <p>
+                    No completed courses added yet.
+                </p>
+
+            </div>
+        
+        </section>
+
+        <div class="advisor-workspace">
+
+            <!-- AVAILABLE COURSES -->
+
+            <section>
+
+                <h3>Available Courses</h3>
+
+                <p>
+                    Courses that satisfy their prerequisites will appear
+                    here. You can review their information and add them
+                    to your semester plan.
+                </p>
+
+                <div>
+
+                    <label for="courseSearch">
+                        Search Courses
+                    </label>
+
+                    <input
+                        type="search"
+                        id="courseSearch"
+                        placeholder="Search by course code or name..."
+                    >
+
+                    <label for="courseFilter">
+                        Display
+                    </label>
+
+                    <select id="courseFilter">
+
+                        <option value="eligible">
+                            Eligible Courses
+                        </option>
+
+                        <option value="all">
+                            All Courses
+                        </option>
+
+                        <option value="completed">
+                            Completed Courses
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div id="availableCourses">
+
+                    <p>
+                        Loading available courses...
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- SEMESTER PLANNER -->
+
+            <section>
+
+                <h3>Semester Planner</h3>
+
+                <p>
+                    Organize eligible courses into your tentative
+                    semester schedule. Drag courses from the available
+                    courses list into a semester below.
+                </p>
+
+                <button
+                    type="button"
+                    id="clearPlanButton"
+                >
+                    Clear Semester Plan
+                </button>
+
+                <p id="plannerMessage" aria-live="polite">
+                    Drag eligible courses into a semester to begin planning.
+                </p>
+
+                <div class="planner-grid">
+
+                    <!-- YEAR 1 -->
+
+                    <div class="academic-year">
+
+                        <h4>Year 1</h4>
+
+                        <div
+                            class="semester-dropzone"
+                            data-year="1"
+                            data-semester="Fall"
+                        >
+                            <h4>Fall</h4>
+
+                            <p class="drop-hint">
+                                Drop courses here.
+                            </p>
+                        </div>
+
+                        <div
+                            class="semester-dropzone"
+                            data-year="1"
+                            data-semester="Spring"
+                        >
+                            <h4>Spring</h4>
+
+                            <p class="drop-hint">
+                                Drop courses here.
+                            </p>
+                        </div>
+
+                        <div
+                            class="semester-dropzone"
+                            data-year="1"
+                            data-semester="Summer"
+                        >
+                            <h4>Summer</h4>
+
+                            <p class="drop-hint">
+                                Drop courses here.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- YEAR 2 -->
+
+                    <div class="academic-year">
+
+                        <h4>Year 2</h4>
+
+                        <div
+                            class="semester-dropzone"
+                            data-year="2"
+                            data-semester="Fall"
+                        >
+                            <h4>Fall</h4>
+
+                            <p class="drop-hint">
+                                Drop courses here.
+                            </p>
+                        </div>
+
+                        <div
+                            class="semester-dropzone"
+                            data-year="2"
+                            data-semester="Spring"
+                        >
+                            <h4>Spring</h4>
+
+                            <p class="drop-hint">
+                                Drop courses here.
+                            </p>
+                        </div>
+
+                        <div
+                            class="semester-dropzone"
+                            data-year="2"
+                            data-semester="Summer"
+                        >
+                            <h4>Summer</h4>
+
+                            <p class="drop-hint">
+                                Drop courses here.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="semesterPlanSummary">
+
+                    <p>
+                        Your planned course credits will appear here.
+                    </p>
+
+                </div>
+
+            </section>
+        </div>
+        <!-- COURSE REQUIREMENTS -->
+
+        <section>
+
+            <h3>Program Requirements</h3>
+
+            <p>
+                Review the required courses and specialization
+                options for the BSIT program.
+            </p>
+
+            <div id="programRequirements">
+
+                <p>
+                    Loading program requirements...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>COP4813 // Assignment 11</p>
+        <p>BSIT Course Advisor</p>
+    </footer>
+
+</body>
+
+</html>
