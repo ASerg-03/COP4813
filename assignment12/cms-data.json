@@ -1,0 +1,211 @@
+[
+  {
+    "system": "WordPress",
+    "support": "Open-source content management system maintained by the WordPress contributor community. Hosting and paid services are available from many independent providers.",
+    "technology": "Server side: PHP with a MySQL or MariaDB database, typically running on Apache or Nginx. Client side: HTML, CSS, and JavaScript rendered in a web browser. WordPress recommends current PHP and MySQL or MariaDB versions; check its requirements page before installing.",
+    "capabilities": [
+      "Supports thousands of third-party themes and plugins.",
+      "Includes a block-based editor and customizable templates for posts and pages.",
+      "Supports custom post types, media management, user roles, and publishing workflows.",
+      "Provides a REST API for retrieving and managing site content through other applications."
+    ],
+    "limitations": [
+      "The site owner is responsible for keeping WordPress, themes, and plugins updated when self-hosting.",
+      "Third-party plugins and themes can introduce security vulnerabilities or compatibility problems if they are poorly maintained.",
+      "A large number of plugins or poorly optimized themes can make a site harder to maintain and may affect performance.",
+      "The quality and cost of hosting can affect site speed, reliability, and maintenance requirements."
+    ],
+    "example": {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/",
+      "verificationSource": "The site's public WordPress REST API is available at https://techcrunch.com/wp-json."
+    },
+    "sources": [
+      {
+        "name": "WordPress technical requirements",
+        "url": "https://wordpress.org/about/requirements/"
+      },
+      {
+        "name": "WordPress REST API handbook",
+        "url": "https://developer.wordpress.org/rest-api/"
+      },
+      {
+        "name": "WordPress theme templates",
+        "url": "https://developer.wordpress.org/themes/core-concepts/templates/"
+      },
+      {
+        "name": "WordPress security hardening",
+        "url": "https://developer.wordpress.org/advanced-administration/security/hardening/"
+      },
+      {
+        "name": "TechCrunch WordPress REST API",
+        "url": "https://techcrunch.com/wp-json"
+      }
+    ]
+  },
+  {
+    "system": "Drupal",
+    "support": "Open-source content management system developed by the Drupal community and supported by the Drupal Association, a nonprofit organization that supports the project.",
+    "technology": "Server side: PHP with a supported database such as MariaDB, MySQL, PostgreSQL, or SQLite. It runs on web servers such as Apache or Nginx. Client side: HTML, CSS, and JavaScript displayed in a web browser.",
+    "capabilities": [
+      "Uses modules to add functionality and themes to control website appearance.",
+      "Supports structured content types, custom fields, media, taxonomy, and detailed user permissions.",
+      "Includes tools for content moderation, translation, workflows, and complex content management.",
+      "Includes a JSON:API module that exposes content entities through a standardized API."
+    ],
+    "limitations": [
+      "Its extensive configuration options can make it more difficult for beginners to learn than simpler website builders.",
+      "Building and maintaining a complex Drupal site may require PHP and Drupal development experience.",
+      "The hosting environment must meet Drupal's PHP, database, and web-server requirements.",
+      "Contributed modules and customizations need to be checked for compatibility when Drupal is updated."
+    ],
+    "example": {
+      "name": "HEC Montréal",
+      "url": "https://www.hec.ca/",
+      "verificationSource": "Drupal's case study describes HEC Montréal's website as being built on Drupal: https://new.drupal.org/case-study/modernizing-a-leading-business-schools-website"
+    },
+    "sources": [
+      {
+        "name": "Drupal system requirements",
+        "url": "https://www.drupal.org/docs/getting-started/system-requirements"
+      },
+      {
+        "name": "Drupal core modules and themes",
+        "url": "https://www.drupal.org/docs/develop/core-modules-and-themes"
+      },
+      {
+        "name": "Drupal JSON:API module",
+        "url": "https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module"
+      },
+      {
+        "name": "HEC Montréal Drupal case study",
+        "url": "https://new.drupal.org/case-study/modernizing-a-leading-business-schools-website"
+      }
+    ]
+  },
+  {
+    "system": "Joomla",
+    "support": "Open-source content management system maintained by the Joomla community, with project support from Open Source Matters, Inc.",
+    "technology": "Server side: PHP with a supported database such as MySQL, MariaDB, or PostgreSQL. It can run on Apache, Nginx, or Microsoft IIS. Client side: HTML, CSS, and JavaScript displayed in a web browser.",
+    "capabilities": [
+      "Supports templates for changing the design and layout of a website.",
+      "Supports extensions, including components, modules, and plugins, to add functionality.",
+      "Includes multilingual content features, menus, user access levels, and custom fields.",
+      "Provides web services and API functionality for integrations with other applications."
+    ],
+    "limitations": [
+      "Users need compatible PHP hosting and a supported database, so it is not a fully hosted, maintenance-free service by default.",
+      "Some advanced features require installing and configuring third-party extensions.",
+      "Extension and template compatibility should be checked before major Joomla upgrades.",
+      "Its administration and extension system can take time for new users to learn."
+    ],
+    "example": {
+      "name": "Vokoloko",
+      "url": "https://vokoloko.cz/",
+      "verificationSource": "The official Joomla Showcase identifies Vokoloko as a Joomla 6.x site: https://showcase.joomla.org/browse-sites/25883.html"
+    },
+    "sources": [
+      {
+        "name": "Joomla technical requirements",
+        "url": "https://manual.joomla.org/docs/next/get-started/technical-requirements/"
+      },
+      {
+        "name": "Joomla web services API documentation",
+        "url": "https://manual.joomla.org/docs/next/web-services-api/"
+      },
+      {
+        "name": "Joomla official showcase: Vokoloko",
+        "url": "https://showcase.joomla.org/browse-sites/25883.html"
+      },
+      {
+        "name": "Joomla documentation",
+        "url": "https://manual.joomla.org/"
+      }
+    ]
+  },
+  {
+    "system": "Ghost",
+    "support": "Open-source publishing platform developed by the nonprofit Ghost Foundation. Users can host it themselves or pay for the managed Ghost(Pro) hosting service.",
+    "technology": "Server side: Node.js with MySQL as the officially recommended production database, commonly running on Nginx. Client side: HTML, CSS, and JavaScript. Ghost themes use Handlebars, and its APIs exchange JSON data.",
+    "capabilities": [
+      "Provides a publishing editor for creating posts, pages, and newsletters.",
+      "Supports custom themes and templates using Handlebars.",
+      "Includes built-in member accounts, paid subscriptions, and newsletter publishing features.",
+      "Provides Content and Admin APIs, webhooks, and integrations for connecting external services."
+    ],
+    "limitations": [
+      "It is primarily designed for publishing, blogging, and membership-based publications rather than being a general-purpose CMS for every type of website.",
+      "It does not use a traditional WordPress-style plugin system; additional features are usually connected through integrations, code injection, themes, or APIs.",
+      "Self-hosting requires server administration, updates, backups, and maintenance of the supported software stack.",
+      "The officially recommended self-hosted production stack is relatively specific, so using a different database or server setup may be unsupported."
+    ],
+    "example": {
+      "name": "The Browser",
+      "url": "https://thebrowser.com/",
+      "verificationSource": "Ghost features The Browser in its official customer and publication showcases: https://explore.ghost.org/p/the-browser"
+    },
+    "sources": [
+      {
+        "name": "About the Ghost Foundation",
+        "url": "https://ghost.org/about/"
+      },
+      {
+        "name": "Ghost hosting and technical requirements",
+        "url": "https://docs.ghost.org/hosting/"
+      },
+      {
+        "name": "Ghost Content API documentation",
+        "url": "https://ghost.org/docs/content-api/"
+      },
+      {
+        "name": "Ghost integrations",
+        "url": "https://ghost.org/help/integrations/"
+      },
+      {
+        "name": "The Browser on Ghost Explore",
+        "url": "https://explore.ghost.org/p/the-browser"
+      }
+    ]
+  },
+  {
+    "system": "Shopify",
+    "support": "Proprietary, subscription-based hosted commerce platform developed and operated by Shopify Inc. Shopify manages the core hosting and commerce infrastructure.",
+    "technology": "Hosted server and database infrastructure are managed by Shopify rather than selected by the store owner. Storefront themes use Liquid, HTML, CSS, JavaScript, and JSON configuration/templates. Developers can connect to Shopify through its APIs and app platform.",
+    "capabilities": [
+      "Provides tools for managing products, inventory, orders, customers, payments, and online stores.",
+      "Supports customizable storefront themes, reusable sections, blocks, and templates.",
+      "Supports third-party apps and integrations for adding store features.",
+      "Provides APIs for custom applications, integrations, and headless storefront development.",
+      "Includes commerce features such as shopping carts, checkout, and sales-channel integrations."
+    ],
+    "limitations": [
+      "It is a paid proprietary service, with subscription and potentially additional app or transaction costs.",
+      "The platform's backend hosting and database are managed by Shopify, so store owners have less server-level control than with self-hosted CMS software.",
+      "Some checkout customization and API access depend on the Shopify plan being used.",
+      "It is primarily designed for online commerce and may be less suitable for sites that do not need store functionality."
+    ],
+    "example": {
+      "name": "Gymshark",
+      "url": "https://gymshark.com/",
+      "verificationSource": "Shopify's official case study states that Gymshark migrated to Shopify Plus: https://www.shopify.com/case-studies/gymshark"
+    },
+    "sources": [
+      {
+        "name": "Shopify theme architecture",
+        "url": "https://shopify.dev/docs/storefronts/themes/architecture"
+      },
+      {
+        "name": "Shopify theme templates",
+        "url": "https://shopify.dev/docs/storefronts/themes/architecture/templates"
+      },
+      {
+        "name": "Shopify plans and feature limitations",
+        "url": "https://www.shopify.com/pricing"
+      },
+      {
+        "name": "Shopify case study: Gymshark",
+        "url": "https://www.shopify.com/case-studies/gymshark"
+      }
+    ]
+  }
+]

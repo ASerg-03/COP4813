@@ -520,3 +520,106 @@ body.is-dragging {
     }
 
 }
+
+
+/* =========================================
+   ASSIGNMENT 12: CMS COMPARISON
+   ========================================= */
+
+main.cms-page {
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    max-width: 1600px;
+}
+
+
+/* CMS TABLE */
+
+.cms-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border: 1px solid #526b8d;
+    background-color: #eceff3;
+}
+
+#cmsTable {
+    width: 100%;
+    min-width: 1500px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+#cmsTable th,
+#cmsTable td {
+    padding: 12px;
+    border: 1px solid #9ba8ba;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: break-word;
+}
+
+#cmsTable th {
+    background-color: #16233a;
+    color: #dce5f0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#cmsTable td {
+    background-color: #eceff3;
+    line-height: 1.5;
+}
+
+#cmsTable tbody tr:nth-child(even) td {
+    background-color: #d9dde3;
+}
+
+/* Table column proportions */
+
+#cmsTable th:nth-child(1) { width: 9%; }
+#cmsTable th:nth-child(2) { width: 14%; }
+#cmsTable th:nth-child(3) { width: 17%; }
+#cmsTable th:nth-child(4) { width: 20%; }
+#cmsTable th:nth-child(5) { width: 20%; }
+#cmsTable th:nth-child(6) { width: 10%; }
+#cmsTable th:nth-child(7) { width: 10%; }
+
+/* Capabilities and limitations */
+
+#cmsTable ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+#cmsTable li {
+    margin-bottom: 8px;
+}
+
+#cmsTable li:last-child {
+    margin-bottom: 0;
+}
+
+/* Links */
+
+#cmsTable a {
+    color: #263f62;
+    overflow-wrap: anywhere;
+}
+
+#cmsTable a:hover {
+    color: #526b8d;
+}
+
+main.cms-page {
+    width: calc(100% - 20px);
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.cms-table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
