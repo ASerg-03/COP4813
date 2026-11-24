@@ -1,0 +1,136 @@
+{
+  "timelines": [
+    {
+      "id": "american-history",
+      "title": "American History",
+      "description": "Explore important events in American history, from independence to the Civil Rights Movement.",
+      "events": [
+        { "id": 1, "title": "Declaration of Independence", "year": 1776, "dateLabel": "July 4, 1776", "description": "The thirteen colonies declared independence from Great Britain." },
+        { "id": 2, "title": "American Revolution Ends", "year": 1783, "dateLabel": "September 3, 1783", "description": "The Treaty of Paris formally ended the American Revolutionary War." },
+        { "id": 3, "title": "U.S. Constitution Signed", "year": 1787, "dateLabel": "September 17, 1787", "description": "Delegates at the Constitutional Convention signed the new framework of government." },
+        { "id": 4, "title": "Louisiana Purchase", "year": 1803, "dateLabel": "1803", "description": "The United States bought territory from France, roughly doubling the nation's size." },
+        { "id": 5, "title": "American Civil War Begins", "year": 1861, "dateLabel": "April 12, 1861", "description": "Confederate forces attacked Fort Sumter." },
+        { "id": 6, "title": "Emancipation Proclamation", "year": 1863, "dateLabel": "January 1, 1863", "description": "President Lincoln declared enslaved people in Confederate-held territory to be free." },
+        { "id": 7, "title": "Civil War Ends", "year": 1865, "dateLabel": "April 9, 1865", "description": "Confederate General Robert E. Lee surrendered to Ulysses S. Grant at Appomattox Court House." },
+        { "id": 8, "title": "Transcontinental Railroad Completed", "year": 1869, "dateLabel": "May 10, 1869", "description": "The Central Pacific and Union Pacific railroads met at Promontory Summit, Utah, linking the coasts." },
+        { "id": 9, "title": "Ellis Island Opens", "year": 1892, "dateLabel": "January 1, 1892", "description": "Ellis Island became the main immigration station as industrial growth drew millions to the United States." },
+        { "id": 10, "title": "Brown v. Board of Education", "year": 1954, "dateLabel": "May 17, 1954", "description": "The Supreme Court ruled that racial segregation in public schools was unconstitutional." },
+        { "id": 11, "title": "Montgomery Bus Boycott Begins", "year": 1955, "dateLabel": "December 5, 1955", "description": "Following Rosa Parks's arrest, Black residents of Montgomery began a year-long boycott of city buses." },
+        { "id": 12, "title": "March on Washington", "year": 1963, "dateLabel": "August 28, 1963", "description": "Hundreds of thousands gathered for jobs and freedom, where Martin Luther King Jr. gave his \"I Have a Dream\" speech." },
+        { "id": 13, "title": "Civil Rights Act Signed", "year": 1964, "dateLabel": "July 2, 1964", "description": "The law outlawed discrimination based on race, color, religion, sex, or national origin." },
+        { "id": 14, "title": "Voting Rights Act Signed", "year": 1965, "dateLabel": "August 6, 1965", "description": "The law prohibited racial discrimination in voting practices." }
+      ]
+    },
+    {
+      "id": "ancient-civilizations",
+      "title": "Ancient Civilizations",
+      "description": "Explore the rise of early civilizations in Mesopotamia, Egypt, Greece, and Rome.",
+      "events": [
+        { "id": 1, "title": "Rise of Sumerian City-States", "year": -3500, "dateLabel": "c. 3500 BCE", "description": "Cities such as Uruk emerged in southern Mesopotamia, among the world's earliest urban centers." },
+        { "id": 2, "title": "Cuneiform Writing Develops", "year": -3200, "dateLabel": "c. 3200 BCE", "description": "Sumerians developed cuneiform, one of the earliest known writing systems." },
+        { "id": 3, "title": "Unification of Egypt", "year": -3100, "dateLabel": "c. 3100 BCE", "description": "Upper and Lower Egypt were traditionally united under the first pharaoh." },
+        { "id": 4, "title": "Great Pyramid of Giza Built", "year": -2560, "dateLabel": "c. 2560 BCE", "description": "Pharaoh Khufu's pyramid was completed and became the largest of Egypt's pyramids." },
+        { "id": 5, "title": "Code of Hammurabi", "year": -1754, "dateLabel": "c. 1754 BCE", "description": "Babylonian king Hammurabi issued one of the earliest and most complete written law codes." },
+        { "id": 6, "title": "Battle of Kadesh", "year": -1274, "dateLabel": "c. 1274 BCE", "description": "Egypt under Ramses II fought the Hittite Empire in one of the earliest well-documented battles." },
+        { "id": 7, "title": "First Ancient Olympic Games", "year": -776, "dateLabel": "776 BCE", "description": "The traditional date of the first Olympic Games, held in Olympia, Greece." },
+        { "id": 8, "title": "Traditional Founding of Rome", "year": -753, "dateLabel": "753 BCE", "description": "According to Roman tradition, Romulus founded Rome." },
+        { "id": 9, "title": "Persia Conquers Babylon", "year": -539, "dateLabel": "539 BCE", "description": "Cyrus the Great captured Babylon, bringing Mesopotamia into the Persian Empire." },
+        { "id": 10, "title": "Roman Republic Established", "year": -509, "dateLabel": "509 BCE", "description": "The Roman monarchy was traditionally considered to have been overthrown." },
+        { "id": 11, "title": "Battle of Marathon", "year": -490, "dateLabel": "490 BCE", "description": "Athenian forces defeated a Persian invasion in a landmark Greek victory." },
+        { "id": 12, "title": "Parthenon Construction Begins", "year": -447, "dateLabel": "447 BCE", "description": "Athens began building the Parthenon during the height of its golden age." },
+        { "id": 13, "title": "Death of Alexander the Great", "year": -323, "dateLabel": "June 323 BCE", "description": "Alexander died in Babylon, and his vast empire soon fractured among his generals." },
+        { "id": 14, "title": "Death of Cleopatra VII", "year": -30, "dateLabel": "30 BCE", "description": "Egypt's last Ptolemaic ruler died, and Egypt became a Roman province." },
+        { "id": 15, "title": "Roman Empire Begins", "year": -27, "dateLabel": "27 BCE", "description": "Augustus became the first Roman emperor." }
+      ]
+    },
+    {
+      "id": "medieval-history",
+      "title": "Medieval History",
+      "description": "Explore the Middle Ages, from the fall of Rome to the dawn of the Renaissance.",
+      "events": [
+        { "id": 1, "title": "Fall of the Western Roman Empire", "year": 476, "dateLabel": "476 CE", "description": "The last Western Roman emperor, Romulus Augustulus, was deposed." },
+        { "id": 2, "title": "Charlemagne Crowned Emperor", "year": 800, "dateLabel": "December 25, 800", "description": "Pope Leo III crowned Charlemagne emperor of the Romans in Rome." },
+        { "id": 3, "title": "Death of Charlemagne", "year": 814, "dateLabel": "January 28, 814", "description": "Charlemagne died, and his empire was later divided among his heirs." },
+        { "id": 4, "title": "Battle of Hastings", "year": 1066, "dateLabel": "October 14, 1066", "description": "William of Normandy defeated King Harold II and began the Norman conquest of England." },
+        { "id": 5, "title": "First Crusade Launched", "year": 1095, "dateLabel": "November 1095", "description": "Pope Urban II called for a military expedition to the Holy Land at the Council of Clermont." },
+        { "id": 6, "title": "Crusaders Capture Jerusalem", "year": 1099, "dateLabel": "July 15, 1099", "description": "Crusader forces took Jerusalem at the end of the First Crusade." },
+        { "id": 7, "title": "Magna Carta Sealed", "year": 1215, "dateLabel": "June 15, 1215", "description": "King John of England agreed to limits on royal power in a charter of rights." },
+        { "id": 8, "title": "Black Death Reaches Europe", "year": 1347, "dateLabel": "October 1347", "description": "The plague arrived by ship in Sicily and went on to kill a large share of Europe's population." },
+        { "id": 9, "title": "Brunelleschi's Dome Completed", "year": 1436, "dateLabel": "1436", "description": "The dome of Florence Cathedral was completed, a signature achievement of the early Italian Renaissance." },
+        { "id": 10, "title": "Fall of Constantinople", "year": 1453, "dateLabel": "May 29, 1453", "description": "The Ottoman Empire captured Constantinople, ending the Byzantine Empire." },
+        { "id": 11, "title": "Michelangelo Completes David", "year": 1504, "dateLabel": "1504", "description": "Michelangelo finished his marble statue in Florence, a landmark of Renaissance art." }
+      ]
+    },
+    {
+      "id": "world-wars",
+      "title": "World Wars",
+      "description": "Explore the two world wars, the years between them, and the postwar order.",
+      "events": [
+        { "id": 1, "title": "Assassination of Archduke Franz Ferdinand", "year": 1914, "dateLabel": "June 28, 1914", "description": "The Austro-Hungarian heir was killed in Sarajevo, setting off the July Crisis." },
+        { "id": 2, "title": "World War I Begins", "year": 1914, "dateLabel": "July 28, 1914", "description": "Austria-Hungary declared war on Serbia, and the major powers were soon drawn in." },
+        { "id": 3, "title": "United States Enters World War I", "year": 1917, "dateLabel": "April 6, 1917", "description": "The U.S. declared war on Germany." },
+        { "id": 4, "title": "Armistice of 1918", "year": 1918, "dateLabel": "November 11, 1918", "description": "Fighting on the Western Front ended with an armistice between the Allies and Germany." },
+        { "id": 5, "title": "Treaty of Versailles", "year": 1919, "dateLabel": "June 28, 1919", "description": "The peace treaty formally ended the war with Germany and imposed heavy terms." },
+        { "id": 6, "title": "Wall Street Crash", "year": 1929, "dateLabel": "October 29, 1929", "description": "The stock market collapse helped trigger the Great Depression, straining economies and politics worldwide." },
+        { "id": 7, "title": "Hitler Becomes Chancellor", "year": 1933, "dateLabel": "January 30, 1933", "description": "Adolf Hitler was appointed chancellor of Germany, and the Nazi regime soon consolidated power." },
+        { "id": 8, "title": "World War II Begins", "year": 1939, "dateLabel": "September 1, 1939", "description": "Germany invaded Poland, and Britain and France declared war two days later." },
+        { "id": 9, "title": "Battle of Britain", "year": 1940, "dateLabel": "July-October 1940", "description": "The Royal Air Force defended Britain against the German Luftwaffe." },
+        { "id": 10, "title": "Attack on Pearl Harbor", "year": 1941, "dateLabel": "December 7, 1941", "description": "Japan attacked the U.S. naval base in Hawaii, bringing the United States into World War II." },
+        { "id": 11, "title": "Battle of Midway", "year": 1942, "dateLabel": "June 4-7, 1942", "description": "U.S. naval forces sank four Japanese aircraft carriers in a turning point in the Pacific." },
+        { "id": 12, "title": "Battle of Stalingrad Ends", "year": 1943, "dateLabel": "February 2, 1943", "description": "German forces surrendered at Stalingrad after months of fighting, a major turning point on the Eastern Front." },
+        { "id": 13, "title": "D-Day Invasion of Normandy", "year": 1944, "dateLabel": "June 6, 1944", "description": "Allied forces landed on the beaches of Normandy, opening a Western Front in France." },
+        { "id": 14, "title": "Victory in Europe", "year": 1945, "dateLabel": "May 8, 1945", "description": "Germany's surrender took effect, ending the war in Europe." },
+        { "id": 15, "title": "Atomic Bombings and Japan's Surrender", "year": 1945, "dateLabel": "August-September 1945", "description": "Atomic bombs were dropped on Hiroshima and Nagasaki, and Japan formally surrendered on September 2." },
+        { "id": 16, "title": "United Nations Founded", "year": 1945, "dateLabel": "October 24, 1945", "description": "The UN Charter came into force, creating an organization aimed at preserving international peace." },
+        { "id": 17, "title": "Marshall Plan Enacted", "year": 1948, "dateLabel": "April 3, 1948", "description": "The U.S. approved major aid to help rebuild Western European economies." },
+        { "id": 18, "title": "NATO Founded", "year": 1949, "dateLabel": "April 4, 1949", "description": "Western nations signed the North Atlantic Treaty, forming a collective defense alliance." }
+      ]
+    },
+    {
+      "id": "history-of-exploration",
+      "title": "History of Exploration",
+      "description": "Explore voyages, scientific discoveries, flight, and the race to space.",
+      "events": [
+        { "id": 1, "title": "Dias Rounds the Cape of Good Hope", "year": 1488, "dateLabel": "1488", "description": "Portuguese navigator Bartolomeu Dias sailed around southern Africa, opening a sea route toward Asia." },
+        { "id": 2, "title": "Columbus Reaches the Americas", "year": 1492, "dateLabel": "October 12, 1492", "description": "Christopher Columbus made landfall in the Caribbean on his first Atlantic voyage." },
+        { "id": 3, "title": "Da Gama Reaches India", "year": 1498, "dateLabel": "May 20, 1498", "description": "Vasco da Gama arrived at Calicut, establishing a sea route from Europe to India." },
+        { "id": 4, "title": "Magellan Expedition Circumnavigates the Globe", "year": 1522, "dateLabel": "September 6, 1522", "description": "The surviving ship of Magellan's expedition returned to Spain, completing the first voyage around the world." },
+        { "id": 5, "title": "Copernicus Publishes His Heliocentric Model", "year": 1543, "dateLabel": "1543", "description": "Nicolaus Copernicus proposed that the Earth orbits the Sun, a cornerstone of the Scientific Revolution." },
+        { "id": 6, "title": "Galileo's Telescope Observations", "year": 1610, "dateLabel": "1610", "description": "Galileo reported moons orbiting Jupiter and other discoveries made with a telescope." },
+        { "id": 7, "title": "Newton Publishes the Principia", "year": 1687, "dateLabel": "July 5, 1687", "description": "Isaac Newton laid out the laws of motion and universal gravitation." },
+        { "id": 8, "title": "Cook's First Pacific Voyage", "year": 1768, "dateLabel": "1768-1771", "description": "James Cook charted New Zealand and the east coast of Australia and observed the transit of Venus." },
+        { "id": 9, "title": "Darwin Publishes On the Origin of Species", "year": 1859, "dateLabel": "November 24, 1859", "description": "Charles Darwin presented the theory of evolution by natural selection." },
+        { "id": 10, "title": "Wright Brothers' First Powered Flight", "year": 1903, "dateLabel": "December 17, 1903", "description": "Orville and Wilbur Wright made the first sustained, controlled powered airplane flights at Kitty Hawk, North Carolina." },
+        { "id": 11, "title": "Amundsen Reaches the South Pole", "year": 1911, "dateLabel": "December 14, 1911", "description": "Roald Amundsen's Norwegian expedition became the first to reach the South Pole." },
+        { "id": 12, "title": "Lindbergh's Solo Transatlantic Flight", "year": 1927, "dateLabel": "May 20-21, 1927", "description": "Charles Lindbergh flew nonstop from New York to Paris in the Spirit of St. Louis." },
+        { "id": 13, "title": "Sputnik 1 Launched", "year": 1957, "dateLabel": "October 4, 1957", "description": "The Soviet Union launched the first artificial satellite, beginning the Space Race." },
+        { "id": 14, "title": "Yuri Gagarin Orbits Earth", "year": 1961, "dateLabel": "April 12, 1961", "description": "Soviet cosmonaut Yuri Gagarin became the first human in space." },
+        { "id": 15, "title": "Apollo 11 Moon Landing", "year": 1969, "dateLabel": "July 20, 1969", "description": "Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon." },
+        { "id": 16, "title": "Hubble Space Telescope Launched", "year": 1990, "dateLabel": "April 24, 1990", "description": "The orbiting observatory began transforming our view of the universe." }
+      ]
+    },
+    {
+      "id": "history-of-technology",
+      "title": "History of Technology",
+      "description": "Explore inventions that reshaped communication, industry, and daily life.",
+      "events": [
+        { "id": 1, "title": "Gutenberg's Printing Press", "year": 1440, "dateLabel": "c. 1440", "description": "Johannes Gutenberg developed movable-type printing in Europe, making books far cheaper to produce." },
+        { "id": 2, "title": "Watt's Improved Steam Engine", "year": 1769, "dateLabel": "January 5, 1769", "description": "James Watt patented a more efficient steam engine that powered the Industrial Revolution." },
+        { "id": 3, "title": "Voltaic Pile Invented", "year": 1800, "dateLabel": "1800", "description": "Alessandro Volta created the first electric battery, providing a steady source of electric current." },
+        { "id": 4, "title": "Faraday Discovers Electromagnetic Induction", "year": 1831, "dateLabel": "1831", "description": "Michael Faraday's discovery laid the foundation for electric generators and motors." },
+        { "id": 5, "title": "First Telegraph Message", "year": 1844, "dateLabel": "May 24, 1844", "description": "Samuel Morse sent \"What hath God wrought\" from Washington to Baltimore, launching long-distance electrical communication." },
+        { "id": 6, "title": "Bell Patents the Telephone", "year": 1876, "dateLabel": "March 7, 1876", "description": "Alexander Graham Bell received a patent for the telephone." },
+        { "id": 7, "title": "Edison's Practical Light Bulb", "year": 1879, "dateLabel": "October 1879", "description": "Thomas Edison's team demonstrated a long-lasting incandescent lamp." },
+        { "id": 8, "title": "Pearl Street Station Opens", "year": 1882, "dateLabel": "September 4, 1882", "description": "Edison's power station in New York City began supplying electricity to customers." },
+        { "id": 9, "title": "Marconi's Transatlantic Radio Signal", "year": 1901, "dateLabel": "December 12, 1901", "description": "Guglielmo Marconi reported receiving a wireless signal sent across the Atlantic Ocean." },
+        { "id": 10, "title": "Ford Introduces the Model T", "year": 1908, "dateLabel": "October 1, 1908", "description": "The affordable automobile, later mass-produced on assembly lines, put cars within reach of ordinary families." },
+        { "id": 11, "title": "ENIAC Unveiled", "year": 1946, "dateLabel": "February 14, 1946", "description": "One of the first general-purpose electronic computers was publicly announced at the University of Pennsylvania." },
+        { "id": 12, "title": "Transistor Invented", "year": 1947, "dateLabel": "December 1947", "description": "Bell Labs researchers demonstrated the transistor, the building block of modern electronics." },
+        { "id": 13, "title": "First ARPANET Message", "year": 1969, "dateLabel": "October 29, 1969", "description": "The first message was sent between computers on ARPANET, a forerunner of the internet." },
+        { "id": 14, "title": "IBM Personal Computer Released", "year": 1981, "dateLabel": "August 12, 1981", "description": "IBM's PC helped bring personal computing into homes and offices." },
+        { "id": 15, "title": "World Wide Web Opens to the Public", "year": 1991, "dateLabel": "August 1991", "description": "Tim Berners-Lee's web became publicly available, making the internet far easier to navigate." },
+        { "id": 16, "title": "iPhone Announced", "year": 2007, "dateLabel": "January 9, 2007", "description": "Apple unveiled the iPhone, popularizing the modern touchscreen smartphone." }
+      ]
+    }
+  ]
+}
